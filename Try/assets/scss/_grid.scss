@@ -1,0 +1,43 @@
+
+.grid,
+.unit {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: block;
+    clear: both;
+    .unit {
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+    *zoom: 1;
+    &:before {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+        clear: both;
+    }
+    .whole {
+        width: 100%;
+    }
+    .one-third {
+        width: 33.3332%;
+    }
+    .two-fifths {
+        width: 47%;
+    }
+    .three-fifths {
+        width: 53%;
+    }
+}
+
+/* Clearfix after every .grid */
