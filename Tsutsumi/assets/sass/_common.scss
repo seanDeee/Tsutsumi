@@ -1,0 +1,66 @@
+/*********************************
+
+_common.scss
+
+*********************************/
+
+.clearfix::after {
+	display: table;
+	clear: both;
+    content: "";
+}
+.img-center {
+	margin: 0 auto;
+    display: block;
+}
+.txt-center {
+	text-align: center;
+}
+
+.above-the-fold-container {
+	background-color: #fff;
+}
+
+.col-1:hover,
+.col-2:hover,
+.col-3:hover {
+	opacity: .9;
+}
+
+.mobile-menu-icon:hover,
+.mobile-menu-icon-close:hover {
+	cursor: pointer;
+}
+
+.slider img {
+	width: 100%;
+    height: auto;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    }
+    
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.q-link {
+    display: none;
+}

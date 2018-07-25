@@ -1,0 +1,506 @@
+/*********************************
+
+_base.scss
+
+*********************************/
+
+$pcSize: 1200px;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: block;
+	box-sizing: border-box;
+	font-family: Helvetica Neue, Helvetica, Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+
+@media only screen and (min-width: 1241px) {
+
+	body {
+		min-width: $pcSize;
+	}
+
+	.container {
+		margin: 0 auto;
+		width: 1200px;	   
+	}
+
+	#main-header {
+		#logo {
+			width: 300px;
+			height: auto;
+		}
+
+		h1 {
+			margin-top: 60px;
+		    width: 320px;
+		    float: left;
+		    font-size: 0;
+		    line-height: 0;
+    	}
+	}
+
+    .top-header {
+	    float: right;
+
+		.top-info {
+
+			.header-contact-info {
+				width: 200px;
+			    float: left;
+			    margin-top: 23px;
+
+				p {
+					margin: 0;
+					font-size: 13px;
+					line-height: 1.2;
+				}
+
+				.info-phone {
+					margin-top: 5px;
+					margin-bottom: 0;
+				    font-size: 28px;
+				    font-weight: bold;
+				    line-height: .8;
+				}
+
+
+				h3 {
+					margin-top: 5px;
+			    	font-size: 13px;
+			    	line-height: 1.2;
+			    	font-weight: normal;
+
+			    	span {
+			    		margin-left: 6px;
+			    		font-size: 12.4px;
+			    		line-height: 1.2;
+			    	}
+				}
+			}
+
+			.top-info-btn {
+				width: 320px;
+				margin-top: 36px;
+				font-size: 18px;
+			    line-height: 1;
+
+			     a {
+			     	padding-right: 20px;
+				    height: 46px;
+				    line-height: 2.5;
+			     }
+
+			    span::after {
+			    	top: 2px;
+				    right: -25px;
+				    width: 12px;
+				    height: 16px;
+					content: "";
+				    position: absolute;
+				    background: url("./../images/common/arrow_right_white.png") no-repeat 0 0;
+				    background-size: 12px auto;
+				    transition: all .25s ease-out;
+				}
+
+				a:hover span::after {
+				    background: url("./../images/common/arrow_right_orange.png") no-repeat 0 0;
+				    background-size: 12px auto;
+				    transition: all .25s ease-out;
+				}
+			}
+		}
+	}
+
+	#top-menu-nav {
+		margin-top: 20px;
+    	float: right;
+    	display: block !important;
+
+    	a {
+    		display: block;
+		    padding-left: 16px;
+		    padding-right: 16px;
+		    color: #221815;
+		    text-decoration: none;
+		    transition: all .25s ease-out;
+    	}
+
+    	a:hover {
+			color: #f2f2f2;
+			background-color: #00437c;
+		}
+
+		.active {
+			color: #f2f2f2 !important;
+			background-color: #00437c;
+		}
+	}
+
+	footer {
+		margin-top: 115px;
+    	padding: 80px 0;
+
+    	.logo-container {
+    		margin-top: 90px;
+
+    		img {
+    			width: 283px;
+    			height: auto;
+    		}
+		}
+	}
+
+	.q-link {
+		position: fixed;
+	    right: 40px;
+	    bottom: 40px;
+	    font-size: 0;
+	    line-height: 0; 
+
+	    img {
+	    	width: 47px;
+	    	height: 47px;
+	    } 
+	}
+
+}
+
+@media only screen and (max-width: 1240px) and (min-width: 768px) {
+	
+	.container {
+		margin-left: 20px;
+    	margin-right: 20px;
+	}
+
+	#main-header  {
+		box-sizing: border-box;
+	    padding: 0 20px;
+	    background: #fff;
+
+	    .container {
+			margin: 0;
+			width: 100%;
+		}
+
+	} 
+
+	.top-header {
+	    width: 440px;
+	    float: right;
+
+	    .top-info {
+		    width: 440px;
+		    float: right;
+
+		    .header-contact-info {
+			    width: 160px;
+			    float: left;
+			    margin-top: 10px;
+
+			    p {
+			    	font-size: 11px;
+			    	line-height: 1.2;
+			    	font-weight: normal
+			    }
+
+			    h2 {
+				    font-size: 23px;
+				    font-weight: bold;
+				    line-height: 1;
+			    }
+
+			    h3 {
+				    font-size: 11px;
+				    line-height: 1.2;
+				    font-weight: normal;
+
+				    span {
+				    	margin-left: 6px;
+				    }
+			    }
+			}
+
+			.top-info-btn {
+			    width: 260px;
+			    float: right;
+			    margin-top: 13px;
+			    color: #fff;
+			    font-size: 15px;
+			    line-height: 1.4;
+			    text-align: center;
+			    font-weight: normal;
+
+			    a {
+				    padding-right: 20px;
+				    color: #fff;
+				    text-decoration: none;
+				    display: block;
+				    height: 42px;
+				    line-height: 38px;
+				    border: #e39300 2px solid;
+				    box-sizing: border-box;
+				    background: #e39300;
+				    transition: all .25s ease-out;
+			    }
+
+			    span::after {
+			    	content: "";
+				    position: absolute;
+				    top: 2px;
+				    right: -20px;
+				    width: 10px;
+				    height: 14px;
+				    background: url("./../images/common/arrow_right_white.png") no-repeat 0 0;
+				    background-size: 10px auto;
+				    transition: all .25s ease-out;
+			    }
+
+			    a:hover span::after {
+				    background: url("./../images/common/arrow_right_orange.png") no-repeat 0 0;
+				    background-size: 10px auto;
+				    transition: all .25s ease-out;
+				}
+			}
+		}
+	}
+
+	#main-header {
+		h1 {
+			margin-top: 36px;
+		    width: 180px;
+		    float: left;
+		    font-size: 0;
+		    line-height: 0;
+		}
+		#logo {
+	    	width: 180px;
+	    	height: auto;
+    	}
+	}
+
+	
+
+	#top-menu-nav {
+	    margin-top: 6px;
+	    float: right;
+	    width: 100%;
+	    display: block !important;
+
+	    ul {
+	    	float: right;
+	    }
+	    
+	    li {
+	    	float: left;
+		    color: #221815;
+		    font-size: 13px;
+		    line-height: 36px;
+		    margin-right: 13px;
+	    }
+
+	    a:hover {
+			color: #336896 !important;
+		}
+
+		.active {
+			color: #336896 !important;
+		}
+	}
+
+	footer {
+		margin-top: 60px;
+    	padding: 30px 0;
+
+    	.logo-container {
+    		margin-top: 25px;
+	    	
+	    	img {
+			    width: 160px;
+			    height: auto;
+			}
+		}
+	}
+
+	.q-link {
+		position: fixed;
+	    right: 40px;
+	    bottom: 40px;
+	    font-size: 0;
+	    line-height: 0; 
+
+	    img {
+	    	width: 47px;
+	    	height: 47px;
+	    } 
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	.mobile-menu {
+		display: none;
+	}
+
+	.column-desc {
+		padding-right: 20px;
+	}
+
+	.column-content:nth-child(3) .column-desc,
+	.column-content:nth-child(6) .column-desc {
+    	padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 767.5px) {
+	
+	.mobile-menu {
+	    position: absolute;
+	    top: 17px;
+	    left: 11px;
+	    width: 30px;
+	    height: 30px;
+
+	    img {
+	    	width: 30px !important;
+    		height: 30px !important;
+	    }
+	}
+
+	#main-header {
+		h1 {
+			width: 160px;
+		    font-size: 0;
+		    line-height: 0;
+		    padding: 22px 0;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+
+		img {
+		    width: 160px;
+		    height: auto;
+		}
+
+		.top-header, #top-menu-nav {
+			display: none;
+		}
+
+		#top-menu-nav li {
+    		float: none !important;
+    		color: #221815;
+		    font-size: 13px;
+		    line-height: 1.5;
+		    border-bottom: #a0a0a0 1px solid;
+
+    		a {
+    			padding: 15px 15px;
+			    display: block;
+			    color: #fff;
+			    background: #00437c;
+			    text-decoration: none;
+    		}
+		}
+	}
+
+	#top-menu-nav {
+		background: #fff;
+
+		.active {
+			opacity: 0.8;
+		}
+
+		a {
+			transition: all .25s ease-out;
+		}
+
+		a:hover {
+			opacity: 0.8;
+		}
+	}
+
+
+	footer {
+		margin-top: 80px;
+
+		#bottom-nav li {
+			display: block;
+			text-align: left;
+			color: #221815;
+		    font-size: 13px;
+		    line-height: 1.5;
+		    border-bottom: #a0a0a0 1px solid;
+
+			a {
+			    padding: 15px 15px;
+			    display: block;
+			    color: #fff;
+			    background: #00437c;
+			    text-decoration: none;
+			}
+		}
+
+		.footer-info {
+   			padding: 30px 0;
+   			position: relative;
+
+   			.logo-container {
+			    width: 160px;
+			    margin-left: auto;
+			    margin-right: auto;
+			    text-align: center;
+			    font-size: 0;
+			    line-height: 0;
+
+			    a img {
+			    	width: 160px;
+			    }
+			}
+
+			.footer-txt {
+				margin-top: 12px;
+			    color: #221815;
+			    font-size: 10px;
+			    line-height: 1.4;
+			    text-align: center;
+			}
+		}
+	}
+
+	#top-menu-nav {
+		position: absolute;
+		width: 100%;
+		z-index: 999;
+	}
+
+	.q-link {
+		position: absolute !important;
+		bottom: 12px !important;
+		right: 12px !important;
+
+		img {
+	    	width: 38px !important;
+	    	height: 38px !important;
+    	}
+	}
+}
+
+
+@media only screen and (max-width: 567px) {
+	.q-link {
+		position: absolute !important;
+		bottom: 8px !important;
+		right: 8px !important;
+
+		img {
+	    	width: 28px !important;
+	    	height: 28px !important;
+    	}
+	}
+}

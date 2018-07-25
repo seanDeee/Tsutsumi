@@ -1,0 +1,68 @@
+/*********************************
+
+_header.scss
+
+*********************************/
+
+#main-header{
+	border-bottom: 3px solid #00437c;
+}
+
+.top-info {
+
+	.info-phone a {	
+		color: #231815;
+		text-decoration: none;
+	}
+
+	.top-info-btn {
+		
+	    float: right;
+	    color: #fff;
+	    text-align: center;
+	    font-weight: normal;
+
+	    a {
+		    text-decoration: none;
+		    display: block;
+		    border: #e39300 2px solid;
+		    box-sizing: border-box;
+		    background: #e39300;
+		    transition: all .25s ease-out;
+		    color: #fff;
+	    }
+
+	    span {
+	    	position: relative;
+	    }
+
+		a:hover {
+			background: #fff;
+			color: #e39300;
+		}
+
+	}
+}
+
+#top-menu-nav {
+
+	ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	    overflow: auto;
+	}
+
+	li {
+		float: left;
+	    color: #221815;
+	    font-size: 14px;
+	    line-height: 48px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #221815;
+	}
+
+}
