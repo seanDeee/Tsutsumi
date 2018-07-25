@@ -1,0 +1,10 @@
+AuthUserFile 	/usr/home/ai106yq8qv/html/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Protected Area"
+AuthType Basic
+<Limit GET POST>
+require valid-user
+</Limit>
+
+Options +SymLinksIfOwnerMatch
+RewriteEngine on
